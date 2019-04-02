@@ -8,7 +8,7 @@ Calculator is able to:
 * multiply
 * divide
 
-Check report.pdf to see the description of the design and implementation of the calculator services.
+Check report.pdf to see the description of the design and implementation of the calculator services as well as an idea of how to make the calculator stateful.
 
 ---
 ## How to deploy and run the client:
