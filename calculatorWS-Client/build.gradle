@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'calcws.CalculatorClient'
+sourceSets.main.java.srcDirs = ['src']
+
+// tag::repositories[]
+repositories {
+    mavenCentral()
+}
+// end::repositories[]
+
+// tag::jar[]
+jar {
+    baseName = 'CalculatorClient'
+    version =  '0.1.0'
+}
+// end::jar[]
+
+// tag::dependencies[]
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "org.slf4j:slf4j-api:1.7.13"
+    testCompile "junit:junit:4.12"
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+
+}
+// end::dependencies[]
+
+// tag::wrapper[]
+// end::wrapper[]
