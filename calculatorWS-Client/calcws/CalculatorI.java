@@ -45,8 +45,8 @@ public interface CalculatorI {
      */
     @WebMethod
     @WebResult(partName = "return")
-    @Action(input = "http://calcws/CalculatorI/mulRequest", output = "http://calcws/CalculatorI/mulResponse")
-    public double mul(
+    @Action(input = "http://calcws/CalculatorI/subRequest", output = "http://calcws/CalculatorI/subResponse")
+    public double sub(
         @WebParam(name = "arg0", partName = "arg0")
         double arg0,
         @WebParam(name = "arg1", partName = "arg1")
@@ -77,8 +77,8 @@ public interface CalculatorI {
      */
     @WebMethod
     @WebResult(partName = "return")
-    @Action(input = "http://calcws/CalculatorI/subRequest", output = "http://calcws/CalculatorI/subResponse")
-    public double sub(
+    @Action(input = "http://calcws/CalculatorI/mulRequest", output = "http://calcws/CalculatorI/mulResponse")
+    public double mul(
         @WebParam(name = "arg0", partName = "arg0")
         double arg0,
         @WebParam(name = "arg1", partName = "arg1")

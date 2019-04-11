@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
+apply plugin: 'war'
 
 mainClassName = 'calcws.CalcPublisher'
 sourceSets.main.java.srcDirs = ['src']
@@ -16,6 +17,8 @@ jar {
     baseName = 'CalculatorWS'
     version =  '0.1.0'
 }
+
+
 // end::jar[]
 
 // tag::dependencies[]
