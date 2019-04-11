@@ -11,8 +11,10 @@ Calculator is able to:
 Check report.pdf to see the description of the design and implementation of the calculator services as well as an idea of how to make the calculator stateful.
 
 ---
-## How to deploy and run the client:
+## How to deploy and run the client: 
+*gradle required
 
+1. Go to the caclulatorWS folder and generate a .war file using ```./gradlew war```. It should be located in the ```../build/libs/CalculatorWS.war```
 1. Put the calculatorWS.war file inside the apache-tomcat-8.5.39/webapps (or another version of tomcat server) folder and start the server in order to start the service.
 2. Go to the calculatorWS-Client folder. The WSLD is located at the  ```http://localhost:8889/calculatorWS/services/CalculatorImpl?wsdl``` (the domain of the local host will be different depending on the address of the tomcat server) and it is used to generate the client.
 3. Run ```wsimport -keep http://localhost:8889/calculatorWS/services/CalculatorImpl?wsdl``` inside the calculatorWS-Client (again update port's number)
